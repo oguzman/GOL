@@ -22,6 +22,8 @@
 		C8ADB47B18F511B200EB0604 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8ADB45A18F511B200EB0604 /* UIKit.framework */; };
 		C8ADB48318F511B200EB0604 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C8ADB48118F511B200EB0604 /* InfoPlist.strings */; };
 		C8ADB48518F511B200EB0604 /* GOLTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C8ADB48418F511B200EB0604 /* GOLTests.m */; };
+		C8ADB49018F5121900EB0604 /* Space.m in Sources */ = {isa = PBXBuildFile; fileRef = C8ADB48F18F5121900EB0604 /* Space.m */; };
+		C8ADB49318F5125200EB0604 /* Life.m in Sources */ = {isa = PBXBuildFile; fileRef = C8ADB49218F5125200EB0604 /* Life.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,10 @@
 		C8ADB48018F511B200EB0604 /* GOLTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GOLTests-Info.plist"; sourceTree = "<group>"; };
 		C8ADB48218F511B200EB0604 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C8ADB48418F511B200EB0604 /* GOLTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GOLTests.m; sourceTree = "<group>"; };
+		C8ADB48E18F5121900EB0604 /* Space.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Space.h; sourceTree = "<group>"; };
+		C8ADB48F18F5121900EB0604 /* Space.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Space.m; sourceTree = "<group>"; };
+		C8ADB49118F5125200EB0604 /* Life.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Life.h; sourceTree = "<group>"; };
+		C8ADB49218F5125200EB0604 /* Life.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Life.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +128,10 @@
 				C8ADB46F18F511B200EB0604 /* ViewController.m */,
 				C8ADB47118F511B200EB0604 /* Images.xcassets */,
 				C8ADB45D18F511B200EB0604 /* Supporting Files */,
+				C8ADB48E18F5121900EB0604 /* Space.h */,
+				C8ADB48F18F5121900EB0604 /* Space.m */,
+				C8ADB49118F5125200EB0604 /* Life.h */,
+				C8ADB49218F5125200EB0604 /* Life.m */,
 			);
 			path = GOL;
 			sourceTree = "<group>";
@@ -253,8 +263,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8ADB49318F5125200EB0604 /* Life.m in Sources */,
 				C8ADB47018F511B200EB0604 /* ViewController.m in Sources */,
 				C8ADB46718F511B200EB0604 /* AppDelegate.m in Sources */,
+				C8ADB49018F5121900EB0604 /* Space.m in Sources */,
 				C8ADB46318F511B200EB0604 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -393,6 +405,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GOL/GOL-Prefix.pch";
 				INFOPLIST_FILE = "GOL/GOL-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -406,6 +419,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GOL/GOL-Prefix.pch";
 				INFOPLIST_FILE = "GOL/GOL-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -470,6 +484,7 @@
 				C8ADB48A18F511B200EB0604 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C8ADB48B18F511B200EB0604 /* Build configuration list for PBXNativeTarget "GOLTests" */ = {
 			isa = XCConfigurationList;
@@ -478,6 +493,7 @@
 				C8ADB48D18F511B200EB0604 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Space.h"
+#import "Life.h"
 
 @interface ViewController : UIViewController
-
+@property (nonatomic, readonly) Space * space;
+@property (nonatomic, strong) Life * life;
+@property (nonatomic, assign) int generation;
+@property (nonatomic, strong) NSTimer * ticker;
 @end
