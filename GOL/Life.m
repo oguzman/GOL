@@ -21,7 +21,7 @@
         {
             for (int x = 0; x < size.width; x ++)
             {
-                world[y][x] = arc4random_uniform(200) < 10;
+                world[y][x] = arc4random_uniform(80) < 10;
             }
         }
     }
@@ -34,7 +34,7 @@
     {
         for (int x = 0; x < size.width; x ++)
         {
-            world[y][x] = arc4random_uniform(200) < 8;
+            world[y][x] = arc4random_uniform(80) < 8;
         }
     }
 }
@@ -49,7 +49,7 @@
         }
     }
     
-    int rand = arc4random_uniform(100);
+    int rand = arc4random_uniform(80);
     
     if(arc4random_uniform(2) < 1)
     {
